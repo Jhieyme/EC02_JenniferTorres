@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.fabAddMovie.setOnClickListener(v -> {
+        binding.fabAddTrip.setOnClickListener(v -> {
             Snackbar.make(binding.getRoot(), "Add a trip", Snackbar.LENGTH_SHORT).show();
         });
     }
