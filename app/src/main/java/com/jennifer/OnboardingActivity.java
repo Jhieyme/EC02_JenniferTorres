@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.jennifer.databinding.ActivityMainBinding;
 import com.jennifer.databinding.ActivityOnboardingBinding;
 
 public class OnboardingActivity extends AppCompatActivity {
