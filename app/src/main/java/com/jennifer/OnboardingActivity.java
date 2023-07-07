@@ -6,13 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.jennifer.databinding.ActivityMainBinding;
+import com.jennifer.databinding.ActivityOnboardingBinding;
+
 public class OnboardingActivity extends AppCompatActivity {
 
+    private ActivityOnboardingBinding binding;
     private static final long DELAY_TIME = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_onboarding);
+        binding = ActivityOnboardingBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 
     @Override
